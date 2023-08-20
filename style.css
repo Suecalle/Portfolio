@@ -104,13 +104,15 @@ button:hover{
 }
 
 .hero-title h1:before {
-    border-bottom: 1px dashed #a7a7a7;
     border-left: 1px dashed #a7a7a7;
+    border-bottom: 1px dashed #a7a7a7;
     bottom: 6px;
     height: 24px;
     left: 0;
-    width: 36px
+    width: 36px;
+
 }
+
 
 .hero-title h1:after {
     border-right: 1px dashed #e63550;
