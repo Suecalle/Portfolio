@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>My Portfolio</title>
 </head>
 
@@ -14,8 +15,8 @@
     <header class="hero">
         <img class="logos" src="./img/./blackH.jpeg">
         <nav id="nav" class="primary-nav">
-            
-            
+
+
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -37,51 +38,118 @@
     <section class="section" id="about">
         <div class="container-lg">
             <div class="about-text">
-            <h2>About Me </h2>
-            <hr>
-            <p>Hi! My name is Hugo and I'm a self-thought programmer.
-            I'm currently learning at Codecademy to become a Front-End Engineer.<br>
-            Computers, gaming and tech has always been one of my passions and I'm happy to be on this path.</p>
+                <h2>About Me </h2>
+                <hr>
+                <p>Hi! My name is Hugo and I'm a self-thought programmer.
+                    I'm currently learning at Codecademy to become a Front-End Engineer.<br>
+                    Computers, gaming and tech has always been one of my passions and I'm happy to be on this path.</p>
             </div>
         </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section section-projects bg-medium" id="projects">
+        <div id="projects-container" class="container-lg-12 projects-container"></div>
         <div class="projects-header">
             <h2>Projects</h2>
             <hr>
         </div>
-        <div class="container-lg-12">
-           
-            <div class="row">
-                <div class="col-lg-4">
-                    <a href="https://suecalle.github.io/Faviconh/">
-                        <img class="img-fluid"src="./img/Favicon-img.png" alt="Favicon" srcset="">
-                    </a>
-                </div>
 
-                <div class="col-lg-4">
-                    <a href="https://suecalle.github.io/Faviconh/">
-                        <img class="img-fluid" src="./img/Favicon-img.png" alt="Favicon" srcset="">
-                    </a>
-                </div>
 
-                <div class="col-lg-4">
-                    <a href="https://suecalle.github.io/Faviconh/">
-                        <img class="img-fluid" src="./img/Favicon-img.png" alt="Favicon" srcset="">
-                    </a>
-                </div>
-
+        <div class="grid portfolio-grid">
+            <div class="portfolio-item">
+                <a href="https://suecalle.github.io/Faviconh/">
+                    <img class="img-fluid" src="./img/Favicon-img.png" alt="Favicon" srcset="">
+                </a>
             </div>
+
+            <div class="portfolio-item">
+                <a href="https://suecalle.github.io/Faviconh/">
+                    <img class="img-fluid" src="./img/Favicon-img.png" alt="Favicon" srcset="">
+                </a>
+            </div>
+
+            <div class="portfolio-item">
+                <a href="https://suecalle.github.io/Faviconh/">
+                    <img class="img-fluid" src="./img/Favicon-img.png" alt="Favicon" srcset="">
+                </a>
+            </div>
+
+        </div>
         </div>
     </section>
 
-    <section class="section" id="skills">
-        <div class="skills-header">
-            <h2>Skills</h2>
-            <hr>
-        </div>
-        <div class="container">
+    <section class="section bg-light section-skills" id="skills">
+        <div class="container-lg-12 skills-container">
+            <div class="skills-header">
+                <h2>Skills</h2>
+                <hr>
+            </div>
+            <div class="section-body row">
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                    <i class="devicon-html5-plain"></i>
+                    <h3>HTML 5</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="col 6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                    <i class="devicon-css3-plain"></i>
+                    <h3>CSS 3</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                    <i class="devicon-javascript-plain"></i>
+                    <h3>Javascript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 60%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                    <i class="devicon-git-plain"></i>
+                    <h3>Git</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 70%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                    <i class="devicon-github-plain"></i>
+                    <h3>Git Hub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                    <i class="devicon-react-plain"></i>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 15%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                    <i class="devicon-bootstrap-plain"></i>
+                    <h3>Bootstrap</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                    <i class="devicon-sass-plain"></i>
+                    <h3>Sass</h3>
+                    <div class="skill-bar">
+                        <div class="skill-percentage" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
     </section>
