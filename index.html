@@ -9,16 +9,26 @@
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
     <title>My Portfolio</title>
 </head>
 
 <body>
     <header class="hero">
         <img class="logos" src="./img/./blackH.jpeg">
-        <a class="toggle" title="Toggle Menu"></a>
+        
 
         <nav id="nav" class="primary-nav">
-            <a class="toggle" title="Close Menu"></a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
 
 
             <ul>
@@ -28,7 +38,7 @@
                 <li><a href="#projects">Projects</a></li>
                 
             </ul>
-            <a><button href="#contact" class='button' type="button" onclick=location.href='#projects'>Contact</button></a>
+            <a><button href="#contact" id="contact-button" class='button' type="button" onclick=location.href='#projects'>Contact</button></a>
         </nav>
     </header>
 

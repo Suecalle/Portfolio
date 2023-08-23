@@ -8,6 +8,7 @@
 }
 body {
     overflow-x: hidden;
+    overflow: scroll;
 }
 
 .main {
@@ -220,7 +221,7 @@ button:hover{
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin: 20px 50px;
     margin-bottom: 40px;
@@ -391,9 +392,88 @@ footer button{
     color: hsla(0, 0%, 100%, .6);
 }
 
+.dropbtn {
+    background-color: #ea1538;
+    color: white;
+    padding: 10px 24px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
 
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #ff4161e6;
+    opacity: 0.8;
+    transition: all 0s ease;
+    
+}
 
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    right: 0;
+    z-index: 1;
+    
+}
 
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
+.dropdown a:hover {
+    background-color: #111;
+    color: #ff4161e6;
+    text-decoration: none;
+}
 
+.show {
+    display: block;
+}
+
+@media screen and (min-width: 668px){
+    .dropbtn {
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width: 668px) {
+    nav ul {
+        display: none;   
+    }
+    #contact-button {
+            display: none;
+         }
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(5rem, auto) 1fr minmax(5rem, auto);
+            
+        }
+}
+
+@media screen and (max-width: 900px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto minmax(5rem, auto) 1fr minmax(5rem, auto);
+        margin: 10px;
+    }
+};
+    
+}
