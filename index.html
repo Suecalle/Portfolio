@@ -8,22 +8,27 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Portfolio</title>
 </head>
 
 <body>
     <header class="hero">
         <img class="logos" src="./img/./blackH.jpeg">
+        <a class="toggle" title="Toggle Menu"></a>
+
         <nav id="nav" class="primary-nav">
+            <a class="toggle" title="Close Menu"></a>
 
 
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                
             </ul>
-            <a href="#"><button class='button' type="button">Contact</button></a>
+            <a><button href="#contact" class='button' type="button" onclick=location.href='#projects'>Contact</button></a>
         </nav>
     </header>
 
@@ -34,7 +39,7 @@
             </h1>
         </div>
     </section>
-
+<main class="main">
     <section class="section" id="about">
         <div class="container-lg">
             <div class="about-text">
@@ -46,6 +51,81 @@
             </div>
         </div>
     </section>
+<section class="section bg-light section-skills" id="skills">
+    <div class="container-lg-12 skills-container">
+        <div class="skills-header">
+            <h2>Skills</h2>
+            <hr>
+        </div>
+        <div class="section-body row">
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                <i class="devicon-html5-plain"></i>
+                <h3>HTML 5</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="col 6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                <i class="devicon-css3-plain"></i>
+                <h3>CSS 3</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                <i class="devicon-javascript-plain"></i>
+                <h3>Javascript</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                <i class="devicon-git-plain"></i>
+                <h3>Git</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                <i class="devicon-github-plain"></i>
+                <h3>Git Hub</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                <i class="devicon-react-plain"></i>
+                <h3>React</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 15%;"></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                <i class="devicon-bootstrap-plain"></i>
+                <h3>Bootstrap</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 85%;"></div>
+                </div>
+            </div>
+
+            <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
+                <i class="devicon-sass-plain"></i>
+                <h3>Sass</h3>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 20%;"></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
 
     <section class="section section-projects bg-medium" id="projects">
         <div id="projects-container" class="container-lg-12 projects-container">
@@ -76,82 +156,46 @@
             </div>
         </div>
     </section>
-
-    <section class="section bg-light section-skills" id="skills">
-        <div class="container-lg-12 skills-container">
-            <div class="skills-header">
-                <h2>Skills</h2>
-                <hr>
-            </div>
-            <div class="section-body row">
-                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
-                    <i class="devicon-html5-plain"></i>
-                    <h3>HTML 5</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 85%;"></div>
-                    </div>
-                </div>
-
-                <div class="col 6 col-sm-4 col-lg-3 col-xxl-2 skill">
-                    <i class="devicon-css3-plain"></i>
-                    <h3>CSS 3</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 85%;"></div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
-                    <i class="devicon-javascript-plain"></i>
-                    <h3>Javascript</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 60%;"></div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
-                    <i class="devicon-git-plain"></i>
-                    <h3>Git</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 70%;"></div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
-                    <i class="devicon-github-plain"></i>
-                    <h3>Git Hub</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 75%;"></div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
-                    <i class="devicon-react-plain"></i>
-                    <h3>React</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 15%;"></div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
-                    <i class="devicon-bootstrap-plain"></i>
-                    <h3>Bootstrap</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 85%;"></div>
-                    </div>
-                </div>
-
-                <div class="col-6 col-sm-4 col-lg-3 col-xxl-2 skill">
-                    <i class="devicon-sass-plain"></i>
-                    <h3>Sass</h3>
-                    <div class="skill-bar">
-                        <div class="skill-percentage" style="width: 20%;"></div>
-                    </div>
-                </div>
-            </div>
-
-
+    <section class="section contact-section">
+        <div class="contact-header">
+            <h2>Contact</h2>
+            <hr>
+            <p>For more information feel free to get in touch</p>
         </div>
+        <div class="contact"><div class="container">
+            <form action="mailto:Hugomenesesl88@gmail.com" method="post">
+        
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Enter Your name..">
+        
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Enter Your last name..">
+        
+                <label for="email">E-Mail</label>
+                <input type="text" id="email" name="mail" placeholder="Enter Your e-mail..">
+        
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+                <input type="submit" value="Send">
+        
+            </form>
+        </div></div>
     </section>
+</main>
+    <footer class="footer">
+        <div class="container-lg">
+            <p class="copyright">Hugo Meneses &copy; 2023</p>
+            <nav class="social-nav">
+                <ul>
+                    <li><a href="https://github.com/suecalle/" title="Hugo Meneses - GitHub" rel="noreferrer"
+                            target="_blank"><button style="font-size:24px">Git Hub <i class="fa fa-github"></i></button></i></a>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
 </body>
 
 </html>
