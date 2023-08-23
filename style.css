@@ -222,8 +222,10 @@ button:hover{
 
 
 /* skills section -------------------------------------------------------> */
-.section-skills {
-    background-color: #fcfcfcd5;
+.bg-light {
+    background-color: #c62a2ad5;
+    width:100%;
+    height: 100%;
 }
 .bg-medium {
     background-color: #eeeeeeeb;
@@ -257,8 +259,7 @@ button:hover{
     text-align: left
 }
 
-.skill i,
-.skill svg {
+.skill i {
     color: #b7b7b7;
     font-size: 50px;
     margin-bottom: .35em
