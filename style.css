@@ -8,7 +8,7 @@
 }
 body {
     overflow-x: hidden;
-    overflow: scroll;
+        overflow: scroll;
 }
 
 .main {
@@ -253,6 +253,8 @@ button:hover{
 
 .skills-container {
     margin: 30px 100px;
+    display: grid;
+    gap: 20px;
 }
 
 
@@ -276,8 +278,9 @@ button:hover{
     margin-bottom: 3em;
     padding-left: 20px;
     padding-right: 20px;
-    text-align: left
+    text-align: left;
 }
+
 
 .skill i {
     color: #b7b7b7;
@@ -375,7 +378,7 @@ input[type=submit]:hover {
 .footer>* {
     align-items: center;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 .footer .copyright {
     margin-bottom: 0
@@ -385,6 +388,7 @@ footer button{
     background-color: #111;
     color: hsla(0, 0%, 100%, .6);
     border: none;
+    margin-top: 15px;
 }
 
 
@@ -455,7 +459,7 @@ footer button{
 }
 
 @media screen and (max-width: 668px) {
-    nav ul {
+    .primary-nav ul {
         display: none;   
     }
     #contact-button {
@@ -475,5 +479,24 @@ footer button{
         margin: 10px;
     }
 };
-    
+
+
+.close-icon {
+    z-index: 9;
+    width: 2em;
+    height: 2em;
+    display: none;
+}
+
+.arrow {
+    fill: #b51a00;
+        position: fixed;
+        height: 50px;
+        bottom: 20px;
+        right: 15px;
+        z-index: 9;
+    }
+
+.social-nav {
+    margin-right: 50px;
 }
